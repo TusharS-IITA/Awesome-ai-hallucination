@@ -1,99 +1,134 @@
 # Curated Research Papers
 
-## Verified AI-Generated References
-
-- **Language Models are Few-Shot Learners**
-  Brown, T., Mann, B., Ryder, N., et al., 2020, NeurIPS
-  [View Paper](https://arxiv.org/abs/2005.14165)
-  Introduces GPT-3 and establishes the foundational capabilities of massive language models.
+## Survey and Review Papers
 
 - **A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions**
   Huang, L., Yu, W., Ma, W., et al., 2023, arXiv
   [View Paper](https://arxiv.org/abs/2311.05232)
   Provides a comprehensive taxonomy of hallucination types and evaluates existing detection mechanisms.
 
-- **Language Models (mostly) Know What They Know**
-  Kadavath, S., Conerly, T., Asks, T., et al., 2022, arXiv
-  [View Paper](https://arxiv.org/abs/2207.05221)
-  Investigates the calibration of LLM confidence scores across diverse tasks.
+- **Survey of Hallucination in Natural Language Generation**
+  Ji, Z., Lee, N., Frieske, R., et al., 2023, ACM Computing Surveys
+  [View Paper](https://dl.acm.org/doi/10.1145/3571730)
+  A foundational survey categorizing hallucinations based on input metrics and evaluating traditional generation models.
 
-- **What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?**
-  Kendall, A., & Gal, Y., 2017, NeurIPS
-  [View Paper](https://arxiv.org/abs/1703.04977)
-  Provides the critical mathematical distinction between data inherent and model ignorance uncertainty.
+## Foundational Language Models
 
-- **Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation**
-  Kuhn, L., Gal, Y., & Farquhar, S., 2023, arXiv
-  [View Paper](https://arxiv.org/abs/2302.09664)
-  Demonstrates that filtering outputs based on semantic uncertainty thresholds can improve factuality metrics.
-
-- **Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles**
-  Lakshminarayanan, B., Pritzel, A., & Blundell, C., 2017, NeurIPS
-  [View Paper](https://arxiv.org/abs/1706.04599)
-  Proposes ensemble methods as a baseline for capturing uncertainty across model parameters.
-
-- **Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**
-  Lewis, P., Perez, E., Rinott, R., et al., 2020, NeurIPS
-  [View Paper](https://arxiv.org/abs/2005.11401)
-  Introduces RAG, where external context is provided to ground the model and reduce factual fabrications.
-
-- **Measuring Factuality in Generation with Dependency-Level Entailment**
-  Malkin, N., Yildirim, I., & Salakhutdinov, R., 2023, EMNLP
-  [View Paper](https://arxiv.org/abs/2309.09556)
-  Shows that disagreement among multiple completions serves as a reliable factuality signal.
-
-- **On Faithfulness and Factuality in Abstractive Summarization**
-  Maynez, J., Narayan, S., Artetxe, M., & Schwenk, H., 2021, ACL
-  [View Paper](https://arxiv.org/abs/2104.13346)
-  Provides a foundational taxonomy distinguishing intrinsic from extrinsic hallucinations.
+- **Language Models are Few-Shot Learners**
+  Brown, T., Mann, B., Ryder, N., et al., 2020, NeurIPS
+  [View Paper](https://arxiv.org/abs/2005.14165)
+  Introduces GPT-3 and establishes the baseline capabilities of auto-regressive text generation at scale.
 
 - **Language Models as Knowledge Bases?**
   Petroni, F., Rocktäschel, T., Lewis, P., et al., 2019, EMNLP
   [View Paper](https://arxiv.org/abs/1909.01066)
-  Explores probing language models to see if they function as relational knowledge bases.
-
-- **Evaluating Language Models for Indexing Scholarly Citations**
-  Roller, S., Suhr, A., Lin, S., et al., 2023, arXiv
-  [View Paper](https://arxiv.org/abs/2303.07302)
-  Characterizes hallucinations as a failure in knowledge retrieval rather than mere knowledge gaps.
-
-- **Confident Natural Language Inference**
-  Schuster, T., Fisch, A., Barzilay, R., & Adar, E., 2022, EMNLP
-  [View Paper](https://arxiv.org/abs/2210.03387)
-  Demonstrates confidence-based decoding where tokens below a learned threshold are rejected.
+  Explores probing models to determine if they store relational knowledge versus fabricating facts dynamically.
 
 - **Llama 2: Open Foundation and Fine-Tuned Chat Models**
   Touvron, H., Martin, L., Stone, K., et al., 2023, arXiv
   [View Paper](https://arxiv.org/abs/2307.09288)
-  Details the foundational training and factuality performance of large-scale open models.
+  Details the training, alignment, and inherent hallucination mitigations applied to open-source foundation models.
+
+## Uncertainty and Calibration in Neural Networks
+
+- **Selective Classification for Deep Neural Networks**
+  Geifman, Y., & El-Yaniv, R., 2017, NeurIPS
+  [View Paper](https://arxiv.org/abs/1705.08500)
+  Discusses selective prediction, forming the theoretical basis for early-exit strategies. *(Note: The AI generated a Frankenstein citation for this paper, hallucinating the title as "Selective prediction using unreliable classifiers".)*
+
+- **On Calibration of Modern Neural Networks**
+  Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q., 2017, ICML
+  [View Paper](https://arxiv.org/abs/1706.04599)
+  Analyzes the calibration problem in deep learning and introduces temperature scaling. *(Note: The AI incorrectly listed the publication year as 2016 instead of 2017.)*
+
+- **What Uncertainties Do We Need in Bayesian Deep Learning for Computer Vision?**
+  Kendall, A., & Gal, Y., 2017, NeurIPS
+  [View Paper](https://arxiv.org/abs/1703.04977)
+  Provides the critical mathematical distinction between epistemic and aleatoric uncertainty.
+
+- **Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles**
+  Lakshminarayanan, B., Pritzel, A., & Blundell, C., 2017, NeurIPS
+  [View Paper](https://arxiv.org/abs/1612.01474)
+  Proposes ensemble methods as a baseline for capturing uncertainty across model parameters. *(Note: The AI provided a mismatched arXiv ID, incorrectly duplicating the ID from Guo et al.)*
+
+## Uncertainty Metrics for LLMs
+
+- **Language Models (Mostly) Know What They Know**
+  Kadavath, S., Conerly, T., Askell, A., et al., 2022, arXiv
+  [View Paper](https://arxiv.org/abs/2207.05221)
+  Investigates how well LLM confidence scores map to actual output correctness. *(Note: The AI misspelled the author "Askell, A." as "Asks, T.")*
+
+- **Semantic Uncertainty: Linguistic Invariances for Uncertainty Estimation in Natural Language Generation**
+  Kuhn, L., Gal, Y., & Farquhar, S., 2023, ICLR
+  [View Paper](https://arxiv.org/abs/2302.09664)
+  Introduces a method measuring disagreement across multiple model samples to predict factual errors.
+
+- **Measuring Factuality in Generation with Dependency-Level Entailment**
+  Malkin, N., Yildirim, I., & Salakhutdinov, R., 2023, EMNLP
+  [View Paper](https://arxiv.org/abs/2309.09556)
+  Analyzes covariance structures of embeddings from multiple completions to determine structural uncertainty.
+
+- **The Internal State of an LLM Knows When it's Lying**
+  Azaria, A., & Mitchell, T., 2023, Findings of EMNLP
+  [View Paper](https://arxiv.org/abs/2304.13734)
+  Shows that hidden layer activations contain reliable signals of truthfulness independent of the final output logits.
+
+- **SelfCheckGPT: Zero-Resource Black-Box Hallucination Detection for Generative Large Language Models**
+  Manakul, P., Liusie, A., & Gales, M. J. F., 2023, EMNLP
+  [View Paper](https://arxiv.org/abs/2303.08896)
+  Demonstrates how sampling multiple responses from a single LLM can detect hallucinations without external databases.
+
+## Factuality Evaluation and Explainability
+
+- **Questioning the AI: Informing Design Practices for Explainable AI User Experiences**
+  Liao, Q. V., Gruen, D., & Miller, S., 2020, CHI
+  [View Paper](https://dl.acm.org/doi/10.1145/3313831.3376590)
+  Focuses on Explainable AI and communicating internal uncertainty to human users. *(Note: The AI generated a Frankenstein citation, stealing this title but completely fabricating the authors as "Thawani, A., Wangni, J., & Raffel, C., 2022".)*
+
+- **On Faithfulness and Factuality in Abstractive Summarization**
+  Maynez, J., Narayan, S., Artetxe, M., & Schwenk, H., 2020, ACL
+  [View Paper](https://arxiv.org/abs/2005.00661)
+  Evaluates abstractive summarization models to identify intrinsic and extrinsic hallucinations. *(Note: The AI incorrectly generated the year as 2021 and provided a completely mismatched arXiv ID.)*
+
+- **TruthfulQA: Measuring How Models Mimic Human Falsehoods**
+  Lin, S., Hilton, J., & Evans, O., 2022, ACL
+  [View Paper](https://arxiv.org/abs/2109.07958)
+  A benchmark establishing that language models can be prone to generating confident falsehoods if trained on flawed text.
+
+## Mitigation via Retrieval and Augmentation
+
+- **Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks**
+  Lewis, P., Perez, E., Rinott, R., et al., 2020, NeurIPS
+  [View Paper](https://arxiv.org/abs/2005.11401)
+  Introduces the foundational RAG architecture, utilizing external contexts to ground models and suppress hallucination.
 
 - **Extractive Summarization as Text Matching**
   Zhong, M., Liu, P., Wang, Y., & Huang, M., 2020, EMNLP
   [View Paper](https://arxiv.org/abs/2004.08795)
-  Frames text summarization as a semantic matching problem.
+  Frames summarization as a semantic matching problem, providing methodologies useful for clustering generated responses.
 
+- **Retrieval Augmentation Reduces Hallucination in Conversation**
+  Shuster, K., Poff, S., Chen, M., et al., 2021, Findings of EMNLP
+  [View Paper](https://arxiv.org/abs/2104.07567)
+  Demonstrates that integrating real-time neural retrieval directly reduces confident fabrications in open-domain chatbots.
 
-## AI Hallucination Examples (Failed Citation Audit)
-*The following references were generated by the AI but failed the citation integrity audit due to metadata errors, fabricated information, or mismatched identifiers.*
+---
 
-- **On Calibration of Modern Neural Networks**
-  Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q., 2016 (Generated) / 2017 (Actual), ICML
-  [View Paper](https://arxiv.org/abs/1706.04599)
-  Analyzes the calibration problem in deep learning, explaining why modern neural networks are often overly confident.
-  **Error:** Wrong Metadata. The paper exists and the authors and title are correct, but it was published in 2017, not 2016[cite: 1].
+## AI Hallucinated / Unverifiable References
+*The following four references were generated by the AI but were rejected during the citation integrity audit because they are completely fabricated or suffer from severe identifier mismatches that lead to unrelated papers.*
 
-- **Selective Prediction Using Unreliable Classifiers**
-  Geifman, Y., & El-Yaniv, R., 2017, NeurIPS
-  **Error:** Frankenstein Citation. The authors published a highly relevant paper in NeurIPS 2017, but the actual title is "Selective Classification for Deep Neural Networks." The generated title is a plausible fabrication[cite: 1].
+- **Evaluating Language Models for Indexing Scholarly Citations**
+  Roller, S., Suhr, A., Lin, S., et al., 2023. 
+  *(Failed Audit: The provided arXiv ID 2303.07302 resolves to a quantum physics paper titled "Shallower CNOT circuits on realistic quantum hardware".)*
 
-- **Questioning the AI: Informing Design Practices for Explainable AI User Experiences**
-  Thawani, A., Wangni, J., & Raffel, C., 2022, CHI
-  **Error:** Frankenstein Citation. The title belongs to a real 2020 CHI paper authored by Q. Vera Liao et al. The authorship combination provided by the AI is completely fabricated[cite: 1].
+- **Confident Natural Language Inference**
+  Schuster, T., Fisch, A., Barzilay, R., & Adar, E., 2022. 
+  *(Failed Audit: The provided arXiv ID 2210.03387 resolves to a nuclear theory paper titled "Ab initio calculation of charge symmetry breaking".)*
 
 - **Do Language Models Have Coherent Mental Models of Physical Events?**
-  Yildirim, I., Sap, M., LeBras, R., et al., 2021, EMNLP (arXiv:2011.13762)
-  **Error:** Identifier Mismatch. The provided arXiv identifier (2011.13762) resolves to an entirely different paper about mathematics titled "Fourier duality in the Brascamp-Lieb inequality."[cite: 1].
+  Yildirim, I., Sap, M., LeBras, R., et al., 2021. 
+  *(Failed Audit: The provided arXiv ID 2011.13762 resolves to a mathematics paper titled "Fourier duality in the Brascamp-Lieb inequality".)*
 
 - **Evaluating Hallucinations in Language Models**
-  Zhang, Y., Marone, M., Li, Y., et al., 2023, arXiv (arXiv:2311.15930)
-  **Error:** Identifier Mismatch. The provided identifier (2311.15930) resolves to an entirely different paper titled "WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models."[cite: 1].
+  Zhang, Y., Marone, M., Li, Y., et al., 2023. 
+  *(Failed Audit: The provided arXiv ID 2311.15930 resolves to a different paper titled "WorldSense: A Synthetic Benchmark for Grounded Reasoning in Large Language Models".)*
