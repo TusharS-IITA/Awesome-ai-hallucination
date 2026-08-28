@@ -1,7 +1,7 @@
-# Awesome Token-Level Uncertainty in LLMs
+# Awesome AI Hallucination
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A carefully curated collection of research papers, datasets, tools, implementations, and free learning resources exploring how token-level uncertainty can predict and mitigate hallucinations in Large Language Models (LLMs).
+> This repository evaluates how token-level uncertainty estimates can be leveraged to predict and mitigate hallucinations in large language models. It synthesizes existing detection frameworks while identifying critical ongoing challenges in model calibration, computational efficiency, and cross-domain reliability.
 
 ## 📑 Contents
 - [Overview](#-overview)
