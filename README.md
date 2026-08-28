@@ -12,7 +12,6 @@
 - [Tools and Libraries](#-tools-and-libraries)
 - [GitHub Implementations](#-github-implementations)
 - [Free Tutorials and Learning Resources](#-free-tutorials-and-learning-resources)
-- [License](#-license)
 
 ---
 
@@ -57,6 +56,3 @@ High-quality, open-source repositories implementing uncertainty estimation algor
    Canonical's free official guides for optimizing Ubuntu for deep learning workloads, ensuring efficient local execution of uncertainty estimation scripts.
 5. **[PromptingGuide.ai: Hallucination Mitigation](https://www.promptingguide.ai/research/llm-hallucination)**  
    An open-access, regularly updated repository of techniques and research summaries on why models hallucinate and how to structure prompts to reduce uncertainty.
-
-## 📜 License
-[MIT License](LICENSE)
